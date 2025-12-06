@@ -40,10 +40,12 @@ ENERGY_SENSORS = [
     "total_load_consumption",
     "total_yield",
     "total_direct_energy_consumption",
+    "daily_yield"
 ]
 POWER_SENSORS = ["power", "load_power"]
 BATTERY_SENSORS = ["battery_level_soc"]
-ALL_SENSORS = ENERGY_SENSORS + POWER_SENSORS + BATTERY_SENSORS
+POWER_FACTOR_SENSORS = ["power_fraction"]
+ALL_SENSORS = ENERGY_SENSORS + POWER_SENSORS + BATTERY_SENSORS + POWER_FACTOR_SENSORS
 
 
 def unit_of(sensor: str):
@@ -53,6 +55,8 @@ def unit_of(sensor: str):
     if sensor in POWER_SENSORS:
         return UnitOfPower.WATT
     if sensor in BATTERY_SENSORS:
+        return PERCENTAGE
+    if sensor in POWER_FACTOR_SENSORS:
         return PERCENTAGE
     return None
 
@@ -96,6 +100,12 @@ async def async_setup_entry(
                     coordinator, device, plant, s, SensorDeviceClass.BATTERY
                 )
                 for s in BATTERY_SENSORS
+            ]
+            + [
+                ISolarCloudSensor(
+                    coordinator, device, plant, s, SensorDeviceClass.POWER_FACTOR
+                )
+                for s in POWER_FACTOR_SENSORS
             ],
         )
     return True
@@ -131,6 +141,9 @@ class ISolarCloudSensor(CoordinatorEntity, SensorEntity):
             self._attr_state_class = SensorStateClass.MEASUREMENT
             self._value_transform = lambda v: v
         elif sensor_type == SensorDeviceClass.BATTERY:
+            self._attr_state_class = SensorStateClass.MEASUREMENT
+            self._value_transform = lambda v: v * 100.0
+        elif sensor_type == SensorDeviceClass.POWER_FACTOR:
             self._attr_state_class = SensorStateClass.MEASUREMENT
             self._value_transform = lambda v: v * 100.0
         else:

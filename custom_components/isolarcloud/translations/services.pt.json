@@ -1,0 +1,26 @@
+{
+  "import_historical_data": {
+    "name": "Importar dados históricos de energia",
+    "description": "Importa dados de consumo de energia da API do iSolarCloud para um determinado período. (Observação: pode levar algum tempo para buscar os dados de um período mais longo).",
+    "fields": {
+      "start": {
+        "name": "Data de início",
+        "description": "Início do período para o qual os dados devem ser importados."
+      },
+      "end": {
+        "name": "Data de término",
+        "description": "Fim do período para o qual os dados devem ser importados."
+      }
+    }
+  },
+  "list_data_points": {
+    "name": "Listar pontos de dados",
+    "description": "Exibe quais dados estão disponíveis na API do iSolarCloud",
+    "fields": {
+      "measure_points": {
+        "name": "Pontos de medição",
+        "description": "Pontos de dados desejados"
+      }
+    }
+  }
+}

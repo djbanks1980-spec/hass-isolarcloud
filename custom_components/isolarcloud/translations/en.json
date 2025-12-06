@@ -79,6 +79,12 @@
       },
       "battery_level_soc": {
         "name": "Battery level"
+      },
+      "daily_yield": {
+        "name": "Daily Produced energy"
+      },
+      "power_fraction": {
+        "name": "Power Fraction W/Wp"
       }
     }
   }

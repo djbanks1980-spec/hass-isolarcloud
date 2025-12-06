@@ -82,6 +82,12 @@
       },
       "battery_level_soc": {
         "name": "Batteriniveau"
+      },
+      "daily_yield": {
+        "name": "Dagens produktion"
+      },
+      "power_fraction": {
+        "name": "Ydelse W/Wp"
       }
     }
   }

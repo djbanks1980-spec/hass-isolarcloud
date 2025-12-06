@@ -15,6 +15,7 @@ The integration will add one device to your HomeAssistant, representing your Sun
 * Purchased energy
 * Feed-in energy
 * Produced energy
+* Daily Produced energy
 * Direct consumption
 
 The energy sensors can be used in HomeAssistant's [Energy Dashboard](https://www.home-assistant.io/docs/energy/).
@@ -25,6 +26,9 @@ The energy sensors can be used in HomeAssistant's [Energy Dashboard](https://www
 ### Power sensors (in W)
 * Load power
 * Power flow (This is not explained well in the Sungrow documentation. It seems like it is the net power through the inverter, ie. current solar production +/- battery (dis)charge)
+
+### Power Factor sensors (in %)
+* Fraction Power (Indicates the ratio between the generated power and the installed power)
 
 It's possible that other plant types offer different data points which may require changes to the integration. The current configuration is based on my own SH8.0RT-V112 plant.
 

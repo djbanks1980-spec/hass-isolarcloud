@@ -1,0 +1,91 @@
+{
+  "config": {
+    "step": {
+      "pick_implementation": {
+        "title": "Escolher provedor de autenticação"
+      },
+      "user": {
+        "title": "Selecionar servidor iSolarCloud",
+        "description": "Selecione o servidor ao qual deseja se conectar",
+        "data": {
+          "server": "Servidor iSolarCloud"
+        }
+      },
+      "select_plants": {
+        "title": "Selecionar usinas",
+        "description": "Selecione as usinas que deseja conectar.",
+        "data": {
+          "plants": "Usinas"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Esta conta já está configurada",
+      "already_in_progress": "A configuração já está em andamento",
+      "oauth_error": "Ocorreu um erro desconhecido no OAuth2",
+      "oauth_failed": "Falha na autenticação com o serviço",
+      "oauth_timeout": "Tempo limite de autenticação excedido",
+      "oauth_unauthorized": "Não autorizado. Tente novamente.",
+      "missing_configuration": "Falta a configuração do OAuth2",
+      "authorize_url_timeout": "Tempo esgotado ao tentar obter a URL de autorização",
+      "no_url_available": "Nenhuma URL de autorização disponível",
+      "user_rejected_authorize": "Autorização foi rejeitada",
+      "invalid_client_id": "O Client ID do OAuth deve estar no formato applicationId@applicationKey"
+    },
+    "create_entry": {
+      "default": "Autenticado com sucesso e conectado ao serviço",
+      "reauth_successful": "Reautenticado com sucesso e conectado ao serviço"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Configurar intervalo de atualização",
+        "description": "Os dados no iSolarCloud são atualizados a cada 5 minutos aproximadamente. Recomenda-se que a frequência das chamadas à API não seja inferior a 300 segundos.",
+        "data": {
+          "update_interval": "Intervalo de atualização (segundos)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "feed_in_energy_total": {
+        "name": "Energia injetada na rede"
+      },
+      "cumulative_discharge": {
+        "name": "Energia descarregada da bateria"
+      },
+      "energy_storage_cumulative_charge": {
+        "name": "Energia carregada na bateria"
+      },
+      "total_purchased_energy": {
+        "name": "Energia comprada"
+      },
+      "total_load_consumption": {
+        "name": "Energia consumida"
+      },
+      "total_yield": {
+        "name": "Energia produzida"
+      },
+      "total_direct_energy_consumption": {
+        "name": "Consumo direto"
+      },
+      "power": {
+        "name": "Fluxo de potência"
+      },
+      "load_power": {
+        "name": "Potência da carga"
+      },
+      "battery_level_soc": {
+        "name": "Nível da bateria"
+      },
+      "daily_yield": {
+        "name": "Energia produzida no dia"
+      },
+      "power_fraction": {
+        "name": "Fração de potência W/Wp"
+      }
+    }
+  }
+}
