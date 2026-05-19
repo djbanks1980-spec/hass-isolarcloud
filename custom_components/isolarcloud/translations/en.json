@@ -91,7 +91,7 @@
       },
       "grid_active_power_ems": {
         "name": "Grid Active Power (EMS)"
-      }
+      },
       "energy_storage_active_power_ems": {
         "name": "Energy Storage Active Power (EMS)"
       }
