@@ -50,7 +50,7 @@
   },
   "entity": {
     "sensor": {
-      "feed_in_energy_total": {
+      "feed_in_energy_today": {
         "name": "Feed-in energy"
       },
       "ess_daily_discharge_ems": {
