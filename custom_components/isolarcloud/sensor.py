@@ -38,6 +38,7 @@ ENERGY_SENSORS = [
     "energy_storage_cumulative_charge",
     "ess_daily_charge_ems",
     "ess_daily_discharge_ems",
+    "energy_purchased_today",
     "total_purchased_energy",
     "total_load_consumption",
     "total_yield",
