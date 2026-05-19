@@ -40,6 +40,7 @@ ENERGY_SENSORS = [
     "ess_daily_discharge_ems",
     "energy_purchased_today",
     "total_purchased_energy",
+    "daily_load_consumption",
     "total_load_consumption",
     "total_yield",
     "total_direct_energy_consumption",
