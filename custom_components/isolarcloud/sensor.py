@@ -43,7 +43,7 @@ ENERGY_SENSORS = [
     "daily_yield",
     "feed_in_energy_today"
 ]
-POWER_SENSORS = ["power", "load_power", "grid_active_power", "grid_active_power_ems", "energy_storage_active_power_ems",]
+POWER_SENSORS = ["power", "load_power", "grid_active_power", "grid_active_power_ems", "energy_storage_active_power_ems", "meter_ac_power"]
 BATTERY_SENSORS = ["battery_level_soc"]
 POWER_FACTOR_SENSORS = ["power_fraction"]
 ALL_SENSORS = ENERGY_SENSORS + POWER_SENSORS + BATTERY_SENSORS + POWER_FACTOR_SENSORS
