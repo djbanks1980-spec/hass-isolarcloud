@@ -68,9 +68,6 @@
       "daily_yield": {
         "name": "Produced energy"
       },
-      "total_direct_energy_consumption": {
-        "name": "Direct comsumption"
-      },
       "power": {
         "name": "Power flow"
       },
@@ -82,9 +79,6 @@
       },
       "daily_yield": {
         "name": "Daily Produced energy"
-      },
-      "power_fraction": {
-        "name": "Power Fraction W/Wp"
       },
       "grid_active_power": {
         "name": "Grid Active Power"
