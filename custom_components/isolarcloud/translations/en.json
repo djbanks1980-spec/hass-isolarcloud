@@ -53,13 +53,13 @@
       "feed_in_energy_total": {
         "name": "Feed-in energy"
       },
-      "cumulative_discharge": {
+      "ess_daily_discharge_ems": {
         "name": "Battery discharge energy"
       },
-      "energy_storage_cumulative_charge": {
+      "ess_daily_charge_ems": {
         "name": "Battery charge energy"
       },
-      "total_purchased_energy": {
+      "energy_purchased_today": {
         "name": "Purchased energy"
       },
       "total_load_consumption": {
