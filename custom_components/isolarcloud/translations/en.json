@@ -83,6 +83,9 @@
       "meter_ac_power": {
         "name": "Meter AC Power"
       },
+      "meter_active_power": {
+        "name": "Meter Active Power"
+      },
       "energy_storage_active_power_ems": {
         "name": "Energy Storage Active Power (EMS)"
       }
