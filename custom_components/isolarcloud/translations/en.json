@@ -62,10 +62,10 @@
       "energy_purchased_today": {
         "name": "Purchased energy"
       },
-      "total_load_consumption": {
+      "daily_load_consumption": {
         "name": "Consumed energy"
       },
-      "total_yield": {
+      "daily_yield": {
         "name": "Produced energy"
       },
       "total_direct_energy_consumption": {
@@ -85,6 +85,12 @@
       },
       "power_fraction": {
         "name": "Power Fraction W/Wp"
+      }
+      "grid_active_power": {
+        "name": "Grid Active Power"
+      }
+      "grid_active_power_ems": {
+        "name": "Grid Active Power (EMS)"
       }
     }
   }
