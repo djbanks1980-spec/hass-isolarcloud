@@ -85,10 +85,10 @@
       },
       "power_fraction": {
         "name": "Power Fraction W/Wp"
-      }
+      },
       "grid_active_power": {
         "name": "Grid Active Power"
-      }
+      },
       "grid_active_power_ems": {
         "name": "Grid Active Power (EMS)"
       }
