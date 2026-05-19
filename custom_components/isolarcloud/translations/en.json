@@ -80,11 +80,8 @@
       "daily_yield": {
         "name": "Daily Produced energy"
       },
-      "grid_active_power": {
-        "name": "Grid Active Power"
-      },
-      "grid_active_power_ems": {
-        "name": "Grid Active Power (EMS)"
+      "meter_ac_power": {
+        "name": "Meter AC Power"
       },
       "energy_storage_active_power_ems": {
         "name": "Energy Storage Active Power (EMS)"
