@@ -36,13 +36,16 @@ ENERGY_SENSORS = [
     "feed_in_energy_total",
     "cumulative_discharge",
     "energy_storage_cumulative_charge",
+    "ess_daily_charge_ems",
+    "ess_daily_discharge_ems",
     "total_purchased_energy",
     "total_load_consumption",
     "total_yield",
     "total_direct_energy_consumption",
-    "daily_yield"
+    "daily_yield",
+    "feed_in_energy_today"
 ]
-POWER_SENSORS = ["power", "load_power"]
+POWER_SENSORS = ["power", "load_power", "grid_active_power", "grid_active_power_ems"]
 BATTERY_SENSORS = ["battery_level_soc"]
 POWER_FACTOR_SENSORS = ["power_fraction"]
 ALL_SENSORS = ENERGY_SENSORS + POWER_SENSORS + BATTERY_SENSORS + POWER_FACTOR_SENSORS
