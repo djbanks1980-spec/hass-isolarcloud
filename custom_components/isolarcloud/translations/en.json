@@ -85,7 +85,11 @@
       },
       "energy_storage_active_power_ems": {
         "name": "Energy Storage Active Power (EMS)"
+      },
+      "pcs_total_active_power": {
+        "name": "Grid Energy Purchasing Power"
       }
+      
     }
   }
 }
